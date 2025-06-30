@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMPLY CHOCOLATE</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,33 +12,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Logo with navigation, social links -->
     <header class="page-header">
-      <div class="container">
-        <nav>
-          <a href="#"
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo header-logo" href="#"
             >SIMPLY CHOCOLATE<img src="./images/navigation/logo.svg" alt=""
           /></a>
-          <ul class="header-list">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#how-its-made">How it’s made?</a></li>
-            <li><a href="#review">Chocolate is loved</a></li>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-its-made">How it’s made?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Chocolate is loved</a>
+            </li>
           </ul>
-          <a
-            href="https://www.instagram.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-            ><img src="./images/navigation/instagram.svg" alt="instagram"
-          /></a>
-          <a href="https://x.com/" rel="noopener noreferrer" target="_blank"
-            ><img src="./images/navigation/twitter.svg" alt="twitter"
-          /></a>
+          <ul class="social-nav-list">
+            <li class="social-nav-item">
+              <a
+                class="social-nav-link"
+                href="https://www.instagram.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./images/navigation/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="social-nav-item">
+              <a
+                class="social-nav-link"
+                href="https://x.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./images/navigation/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <section class="section-banner section">
         <div class="container">
@@ -45,8 +71,8 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button type="button">Buy now</button>
-          <button type="button">How it’s made</button>
+          <button type="button" class="btn-bynow">Buy now</button>
+          <button type="button" class="btn-howits">How it’s made</button>
           <a href="#bottom"
             >scroll down
             <img src="./images/section-hero-banner/scroll.svg" alt="scroll"
@@ -94,6 +120,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
           <h2>It all adds up to one exceptional taste sensation </h2>
@@ -236,23 +263,38 @@
         </div>
       </section>
     </main>
+
     <footer class="page-footer section">
       <div class="container footer-container">
         <div class="footer-left">
           <h2>Chocolate a delicious cure for a bad day</h2>
           <p class="footer-text">Contact us</p>
-          <address>
-            <ul>
-              <li>+380 (68) 443-94-26</li>
-              <li>simplychoc@gmail.com</li>
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:simplychoc@gmail.com"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
             </ul>
           </address>
           <hr />
-          <nav>
-            <ul>
-              <li><a href="#top">Home</a></li>
-              <li><a href="#how-its-made">How it’s made?</a></li>
-              <li><a href="#review">Chocolate is loved</a></li>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-its-made">How it’s made?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Chocolate is loved</a>
+              </li>
             </ul>
           </nav>
         </div>
