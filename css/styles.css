@@ -599,3 +599,82 @@ input {
 }
 /* address end */
 /* #endregion Footer */
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up {
+  border-radius: 15px;
+  width: 517px;
+  height: 794px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+}
+
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 24px;
+}
+
+.pop-up-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  max-width: 298px;
+  margin-bottom: 40px;
+}
+
+.pop-up-field {
+  margin-bottom: 18px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up-field label {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  margin-bottom: 8px;
+}
+
+.pop-up-field-input {
+  width: 437px;
+  height: 34px;
+}
+
+.pop-up-field:last-of-type {
+  margin-bottom: 40px;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.btn-pup-up {
+  width: 117px;
+  height: 45px;
+}
