@@ -341,8 +341,11 @@ input {
 
 /* #region Section-taste-sensation */
 .section-taste-sensation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   background-color: #fafafa;
-  text-align: center;
 }
 
 .taste-sensation-header {
@@ -376,14 +379,38 @@ input {
   display: flex;
   gap: 24px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.taste-sensation-ltem-choco,
+.taste-sensation-ltem-milk,
+.taste-sensation-lmg-semiб,
+.taste-sensation-ltem-nuts {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+  background-color: #fff;
+}
+
+.taste-sensation-ltem-choco {
+  background-color: #fd9222;
+  border: none;
+}
+
+.taste-sensation-ltem-nuts {
+  background-color: #1e1823;
+}
+
+.taste-sensation-lmg {
+  width: 270px;
+  padding: 28px 32px 82px;
+}
+
 .taste-sensation-ltem {
-  background-color: #fafafa;
   border-radius: 15px;
   overflow: hidden;
   width: 206px;
@@ -393,15 +420,12 @@ input {
   align-items: center;
 }
 
-.taste-sensation-lmg {
-  margin-bottom: 16px;
-  object-fit: contain;
-}
-
 .sensation-icon-text {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
+  padding-left: 28px;
+  padding-top: 36px;
 }
 /* #endregion Section-taste-sensation */
 
