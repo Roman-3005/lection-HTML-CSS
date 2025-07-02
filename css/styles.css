@@ -653,6 +653,7 @@ input {
   border: none;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .pop-up-field label {
@@ -664,8 +665,38 @@ input {
 }
 
 .pop-up-field-input {
-  width: 437px;
-  height: 34px;
+  border: 1.5px solid #404040;
+  border-radius: 13px;
+  padding: 22px 24px 22px 48px;
+  box-sizing: border-box;
+}
+
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field:hover .pop-up-field-input,
+.pop-up-field:hover .pop-up-field-input::placeholder {
+  border-color: #fd9222;
+  stroke: #fd9222;
+  color: #fd9222;
+}
+
+.pop-up-field-input:focus-visible,
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field-input:focus-visible .pop-up-field-input::placeholder {
+  border-color: #fd9222;
+  stroke: #fd9222;
+  outline: none;
+}
+
+.pop-up-svg {
+  position: absolute;
+  top: 48%;
+  left: 28px;
+}
+
+.pop-up-field.pop-up-svg:hover {
+  stroke: #fd9222;
+  fill: transparent;
+  border-color: #fd9222;
 }
 
 .pop-up-field:last-of-type {
