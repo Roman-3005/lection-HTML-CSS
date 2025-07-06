@@ -494,15 +494,6 @@ input {
   margin-bottom: 24px;
 }
 
-.icon-marker {
-  flex-shrink: 0;
-  margin-right: 5px;
-  border-radius: 100%;
-  fill: #4c4c4c;
-  stroke-width: 1px;
-  stroke: #eceded;
-}
-
 .recipe-text {
   display: flex;
   align-items: baseline;
@@ -510,6 +501,18 @@ input {
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: #111;
+}
+
+.recipe-text::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border: 2px solid #eceded;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 8px;
+  flex-shrink: 0;
 }
 
 /* #endregion recipe-section */
@@ -600,7 +603,7 @@ input {
 /* address end */
 /* #endregion Footer */
 
-.overlay {
+/* .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -708,4 +711,4 @@ input {
 .btn-pup-up {
   width: 117px;
   height: 45px;
-}
+} */
